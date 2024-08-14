@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'LoginScreen.dart';
+import 'Signup.dart';
 import 'package:get/get.dart';
 
 
@@ -44,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.grey),),
         ),
         body:DefaultTabController(
-          length: 3,
+          length: 7,
           child: Column(
             children: [
               Material(
@@ -53,11 +55,11 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.white,
                   child: TabBar(
                     physics: const ClampingScrollPhysics(),
-                    padding: EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 10),
+                    padding: EdgeInsets.only(top: 8, left: 8, right: 8, bottom: 8),
                     unselectedLabelColor: Colors.blueGrey,
                     indicatorSize: TabBarIndicatorSize.label,
                     indicator: BoxDecoration(
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(50),
                         color: Colors.greenAccent
                     ),
                     tabs: [
@@ -107,45 +109,11 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: TabBarView(
                   children: [
-                    ListView.separated(
-                      padding: EdgeInsets.all(15),
-                      itemCount: 4,
-                      separatorBuilder: (BuildContext context, int index) => const Divider(),
-                      itemBuilder: (context, index){
-                        return ListTile(
-                          onTap: () {},
-                          title: Text("Chat List $index"),
-                          subtitle: Text("Tab bar ui"),
-                          trailing: Icon(Icons.arrow_circle_right_sharp),
-                        );
-                      },
-                    ),
-                    ListView.separated(
-                      padding: EdgeInsets.all(15),
-                      itemCount: 4,
-                      separatorBuilder: (BuildContext context, int index) => const Divider(),
-                      itemBuilder: (context, index){
-                        return ListTile(
-                          onTap: () {},
-                          title: Text("Status List $index"),
-                          subtitle: Text("Tab bar ui"),
-                          trailing: Icon(Icons.arrow_circle_right_sharp),
-                        );
-                      },
-                    ),
-                    ListView.separated(
-                      padding: EdgeInsets.all(15),
-                      itemCount: 4,
-                      separatorBuilder: (BuildContext context, int index) => const Divider(),
-                      itemBuilder: (context, index){
-                        return ListTile(
-                          onTap: () {},
-                          title: Text("Call List $index"),
-                          subtitle: Text("Tab bar ui"),
-                          trailing: Icon(Icons.arrow_circle_right_sharp),
-                        );
-                      },
-                    ),
+
+                    Login(),
+                    Signup(),
+                    Signup(),
+
                   ],
                 ),
               )

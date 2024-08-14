@@ -5,6 +5,10 @@ import 'Academy.dart';
 import 'Investors.dart';
 import 'Kids.dart';
 import 'bottom_nav_bar.dart';
+import 'chat_bot.dart';
+import 'general.dart';
+import 'interest.dart';
+import 'link_accounts.dart';
 import 'package:get/get.dart';
 
 
@@ -26,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: const MyBottomNavBar(),
+      home: MyBottomNavBar(),
     );
   }
 }
@@ -125,3 +129,4 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
+

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_switch/animated_switch.dart';
 import 'Home.dart';
 import 'package:get/get.dart';
+import 'bottom_nav_bar.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -9,14 +10,10 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue,
       body: Stack(
         children: [
-          const Image(
-              fit: BoxFit.cover,
-              height: double.infinity,
-              width: double.infinity,
-              image: AssetImage('assets/splashimg.jpg')
-          ),
+
           Container(
             decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -104,7 +101,7 @@ class Login extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => const MyHomePage()),
+                          MaterialPageRoute(builder: (context) => const MyBottomNavBar()),
                         );
                       },
 
@@ -115,43 +112,14 @@ class Login extends StatelessWidget {
                   padding: EdgeInsets.only(left: 18.0,right: 18),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
 
-                      Text('Login With',style: TextStyle(color: Colors.white,),),
-
-                    ],
                   ),
                 ),
-                Row(
+                const Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    Container(
-                      height: 50,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          color: const Color(0xff484848),
-                          borderRadius: BorderRadius.circular(5)
-                      ),
-                      child: const Icon(Icons.g_mobiledata,color: Colors.white,size: 40,),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          color: const Color(0xff484848),
-                          borderRadius: BorderRadius.circular(5)
-                      ),
-                      child: const Icon(Icons.apple,color: Colors.white,size: 40,),
-                    ),
-                    Container(
-                      height: 50,
-                      width: 100,
-                      decoration: BoxDecoration(
-                          color: const Color(0xff484848),
-                          borderRadius: BorderRadius.circular(5)
-                      ),
-                      child: const Icon(Icons.facebook,color: Colors.white,size: 40,),
-                    ),
+
+
                   ],
                 ),
                 const Padding(
@@ -161,7 +129,7 @@ class Login extends StatelessWidget {
                       Text("Don't have an account?",style: TextStyle(
                         color: Colors.grey,
                       ),),
-                      Text("Sinup",style: TextStyle(
+                      Text("Signup",style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
                           fontSize: 18

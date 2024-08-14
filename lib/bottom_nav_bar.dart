@@ -16,14 +16,22 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
   int myCurrentIndex = 0;
   List pages = const [
     Accounts(),
-    bot(),
-    general(),
     Interest(),
+    general(),
+    bot(),
   ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       extendBody: true,
+
+      appBar: AppBar(
+        centerTitle: true,
+        title: const Text("GIIH"),
+       backgroundColor: Colors.blue,
+      ),
+
 
       bottomNavigationBar: Container(
         margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),

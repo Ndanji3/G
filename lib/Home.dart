@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: MyBottomNavBar(),
+      home: MyHomePage(),
     );
   }
 }
@@ -46,11 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          elevation: 1,
-          title: Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.grey),),
-        ),
+
         body:DefaultTabController(
           length: 7,
           child: Column(
@@ -66,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     indicatorSize: TabBarIndicatorSize.label,
                     indicator: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
-                        color: Colors.greenAccent
+                        color: Colors.cyan
                     ),
                     tabs: [
                       Tab(

@@ -3,6 +3,7 @@ import 'chat_bot.dart';
 import 'general.dart';
 import 'interest.dart';
 import 'link_accounts.dart';
+import 'Home.dart';
 import 'Kids.dart';
 
 class MyBottomNavBar extends StatefulWidget {
@@ -15,6 +16,8 @@ class MyBottomNavBar extends StatefulWidget {
 class _MyButtomNavBarState extends State<MyBottomNavBar> {
   int myCurrentIndex = 0;
   List pages = const [
+
+    MyHomePage(),
     Accounts(),
     Interest(),
     general(),
@@ -28,7 +31,7 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("GIIH"),
+        title: const Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.grey),),
        backgroundColor: Colors.blue,
       ),
 
@@ -54,7 +57,10 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
                 });
               },
               items: const [
-                BottomNavigationBarItem(icon: Icon(Icons.account_tree_outlined), label: "link accounts"),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.home_filled), label: "Home"),
+                BottomNavigationBarItem(
+                    icon: Icon(Icons.account_tree_outlined), label: "link accounts"),
                 BottomNavigationBarItem(
                     icon: Icon(Icons.favorite), label: "area of interest"),
                 BottomNavigationBarItem(

@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'LoginScreen.dart';
-import 'Signup.dart';
+import 'Academy.dart';
+import 'Investors.dart';
+import 'Kids.dart';
+import 'bottom_nav_bar.dart';
 import 'package:get/get.dart';
 
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: const MyHomePage(),
+      home: const MyBottomNavBar(),
     );
   }
 }
@@ -110,9 +112,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TabBarView(
                   children: [
 
-                    Login(),
-                    Signup(),
-                    Signup(),
+                    Kids(),
+                    Academy(),
+                    Investors(),
 
                   ],
                 ),

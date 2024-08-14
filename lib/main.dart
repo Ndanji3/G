@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'bottom_nav_bar.dart';
 import 'LoginScreen.dart';
 import 'Home.dart';
 import 'Signup.dart';

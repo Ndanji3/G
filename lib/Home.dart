@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'Academy.dart';
 import 'Investors.dart';
-import 'Kids.dart';
+import 'Ideators.dart';
 import 'bottom_nav_bar.dart';
 import 'chat_bot.dart';
 import 'general.dart';
@@ -69,12 +68,12 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Container(
                           height: 50,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(40),
                               border: Border.all(color: Colors.blue, width: 1)
                           ),
                           child: Align(
                             alignment: Alignment.center,
-                            child: Text("Kids"),
+                            child: Text("Ideators"),
                           ),
                         ),
                       ),
@@ -82,20 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Container(
                           height: 50,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
-                              border: Border.all(color: Colors.blue, width: 1)
-                          ),
-                          child: Align(
-                            alignment: Alignment.center,
-                            child: Text("Academy"),
-                          ),
-                        ),
-                      ),
-                      Tab(
-                        child: Container(
-                          height: 50,
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(40),
                               border: Border.all(color: Colors.blue, width: 1)
                           ),
                           child: Align(
@@ -112,8 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: TabBarView(
                   children: [
 
-                    Kids(),
-                    Academy(),
+                    Ideators(),
                     Investors(),
 
                   ],

@@ -4,7 +4,7 @@ import 'general.dart';
 import 'interest.dart';
 import 'link_accounts.dart';
 import 'Home.dart';
-import 'Kids.dart';
+import 'Ideators.dart';
 
 class MyBottomNavBar extends StatefulWidget {
   const MyBottomNavBar({super.key});

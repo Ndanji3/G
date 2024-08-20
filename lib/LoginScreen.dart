@@ -45,8 +45,8 @@ class Login extends StatelessWidget {
                   padding: EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Email Adress',
-                      label: Text('Email Address'),
+                      hintText: 'Username',
+                      label: Text('Username'),
                       fillColor: Color(0xffD8D8DD),
                       filled: true,
                     ),
@@ -56,7 +56,7 @@ class Login extends StatelessWidget {
                   padding: EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Email Adress',
+                      hintText: 'Password',
                       label: Text('Password'),
                       suffixIcon: Icon(Icons.visibility_off),
                       fillColor: Color(0xffD8D8DD),
@@ -129,7 +129,7 @@ class Login extends StatelessWidget {
                       Text("Don't have an account?",style: TextStyle(
                         color: Colors.grey,
                       ),),
-                      Text("Signup",style: TextStyle(
+                      Text("Sign up",style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
                           fontSize: 18

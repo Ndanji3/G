@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:loginsignup/screens/base_screen.dart';
+import 'package:loginsignup/screens/featuerd_screen.dart';
+import 'package:loginsignup/widgets/circle_button.dart';
+import 'package:loginsignup/widgets/search_testfield.dart';
 import 'chat_bot.dart';
 import 'general.dart';
 import 'interest.dart';
@@ -13,16 +18,20 @@ class MyBottomNavBar extends StatefulWidget {
   State<MyBottomNavBar> createState() => _MyButtomNavBarState();
 }
 
+
+
 class _MyButtomNavBarState extends State<MyBottomNavBar> {
+
   int myCurrentIndex = 0;
   List pages = const [
 
     MyHomePage(),
     Accounts(),
     Interest(),
-    general(),
+    FeaturedScreen(),
     bot(),
   ];
+
 
   @override
   Widget build(BuildContext context) {
@@ -33,6 +42,10 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
         centerTitle: true,
         title: const Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.grey),),
        backgroundColor: Colors.blue,
+        leading: const CircleAvatar(
+          radius: 20,
+          backgroundImage: AssetImage('assets/images/standard.png'),
+        ),
       ),
 
 
@@ -74,3 +87,4 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
     );
   }
 }
+

@@ -4,14 +4,14 @@ import 'package:loginsignup/constants/color.dart';
 import 'package:loginsignup/models/course.dart';
 import 'package:loginsignup/screens/details_screen.dart';
 
-class Ideators extends StatefulWidget {
-  const Ideators({Key? key}) : super(key: key);
+class CourseScreen extends StatefulWidget {
+  const CourseScreen({Key? key}) : super(key: key);
 
   @override
-  _IdeatorsState createState() => _IdeatorsState();
+  _CourseScreenState createState() => _CourseScreenState();
 }
 
-class _IdeatorsState extends State<Ideators> {
+class _CourseScreenState extends State<CourseScreen> {
   @override
   Widget build(BuildContext context) {
     return AnnotatedRegion<SystemUiOverlayStyle>(
@@ -29,16 +29,16 @@ class _IdeatorsState extends State<Ideators> {
                     children: [
                       Align(
                         child: Text(
-                          'Add Idea',
+                          'Development',
                           style: Theme.of(context).textTheme.displayMedium,
                         ),
                       ),
                       Positioned(
                         left: 0,
                         child: CustomIconButton(
-                          child: const Icon(Icons.add),
-                          height: 60,
-                          width: 60,
+                          child: const Icon(Icons.arrow_back),
+                          height: 35,
+                          width: 35,
                           onTap: () => Navigator.pop(context),
                         ),
                       ),
@@ -53,7 +53,7 @@ class _IdeatorsState extends State<Ideators> {
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     separatorBuilder: (_, __) {
                       return const SizedBox(
-                        height: 15,
+                        height: 10,
                       );
                     },
                     shrinkWrap: true,
@@ -88,8 +88,8 @@ class CourseContainer extends StatelessWidget {
           context,
           MaterialPageRoute(
               builder: (context) => DetailsScreen(
-                title: course.name,
-              ))),
+                    title: course.name,
+                  ))),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),

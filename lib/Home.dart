@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:loginsignup/Ideators.dart';
+import 'Academy.dart';
 import 'Investors.dart';
-import 'Ideators.dart';
-import 'bottom_nav_bar.dart';
 import 'chat_bot.dart';
 import 'general.dart';
 import 'interest.dart';
@@ -64,16 +64,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.cyan
                     ),
                     tabs: [
+
                       Tab(
                         child: Container(
                           height: 50,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(40),
+                              borderRadius: BorderRadius.circular(30),
                               border: Border.all(color: Colors.blue, width: 1)
                           ),
                           child: Align(
                             alignment: Alignment.center,
-                            child: Text("Ideators"),
+                            child: Text("Ideator"),
                           ),
                         ),
                       ),
@@ -81,7 +82,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Container(
                           height: 50,
                           decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(40),
+                              borderRadius: BorderRadius.circular(30),
                               border: Border.all(color: Colors.blue, width: 1)
                           ),
                           child: Align(
@@ -97,6 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
               Expanded(
                 child: TabBarView(
                   children: [
+
 
                     Ideators(),
                     Investors(),

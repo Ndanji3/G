@@ -67,7 +67,7 @@ class Signup extends StatelessWidget {
                   padding: EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Email Adress',
+                      hintText: 'Password',
                       label: Text('Password'),
                       suffixIcon: Icon(Icons.visibility_off),
                       fillColor: Color(0xffD8D8DD),
@@ -79,8 +79,8 @@ class Signup extends StatelessWidget {
                   padding: EdgeInsets.all(20.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      hintText: 'Email Adress',
-                      label: Text('Conform Password'),
+                      hintText: 'Confirm Password',
+                      label: Text('Confirm Password'),
                       suffixIcon: Icon(Icons.visibility_off),
                       fillColor: Color(0xffD8D8DD),
                       filled: true,

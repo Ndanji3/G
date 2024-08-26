@@ -20,7 +20,7 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
     MyHomePage(),
     Accounts(),
     Interest(),
-    general(),
+    General(),
     bot(),
   ];
 
@@ -32,7 +32,7 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
       appBar: AppBar(
         centerTitle: true,
         title: const Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.grey),),
-       backgroundColor: Colors.blue,
+        backgroundColor: Colors.blue,
       ),
 
 

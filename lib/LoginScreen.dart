@@ -34,7 +34,7 @@ class Login extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                const Text('GIIH Login',style: TextStyle(
+                const Text('Welcome To GIIH',style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
                   fontWeight: FontWeight.bold,

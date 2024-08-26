@@ -7,11 +7,16 @@ class Accounts extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text(
-          "This is a link accounts Page",
-          style: TextStyle(fontSize: 20),
+        child: Card(
+          elevation: 0,
+          color: Colors.blue,
+          child: SizedBox(
+            width: 300,
+            height: 150,
+            child: Center(child: Text('Link Account')),
+          ),
         ),
       ),
     );
   }
-}
+  }

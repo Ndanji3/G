@@ -53,7 +53,7 @@ class _IdeatorsState extends State<Ideators> {
                     padding: const EdgeInsets.symmetric(vertical: 20),
                     separatorBuilder: (_, __) {
                       return const SizedBox(
-                        height: 15,
+                        height: 16,
                       );
                     },
                     shrinkWrap: true,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:loginsignup/Academy.dart';
+import 'package:loginsignup/app/config/routes/app_pages.dart';
 import 'package:loginsignup/chat_bot.dart';
 import 'package:loginsignup/screens/featuerd_screen.dart';
 import 'interest.dart';
@@ -24,7 +25,6 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
   List pages = const [
 
     MyHomePage(),
-    Accounts(),
     Interest(),
     FeaturedScreen(),
     bot(),

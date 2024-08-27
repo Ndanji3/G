@@ -20,7 +20,7 @@ class BuildNewBook extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
-                "Hot New Releases",
+                "New Releases",
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 16,

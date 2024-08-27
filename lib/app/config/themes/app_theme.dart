@@ -11,7 +11,7 @@ class AppTheme {
       canvasColor: Color.fromRGBO(246, 247, 255, 1),
       primaryColor: _primaryColor,
       primaryColorLight: _primaryColorLight,
-      buttonColor: Colors.indigo,
+
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Color.fromRGBO(244, 246, 253, 1),

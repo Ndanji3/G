@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:loginsignup/Ideators.dart';
+import 'package:loginsignup/app/config/routes/app_pages.dart';
 import 'Investors.dart';
 import 'Academy.dart';
 
@@ -102,8 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Text("Academy"),
                           ),
                         ),
-                      )
-
+                      ),
 
 
 
@@ -118,7 +118,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     Ideators(),
                     Investors(),
-                    Academy()
+                    Academy(),
+
 
 
 

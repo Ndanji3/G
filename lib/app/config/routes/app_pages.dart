@@ -1,9 +1,8 @@
 library routes;
-
-import 'package:game_store/app/features/dashboard/index/views/screens/dashboard_screen.dart';
-import 'package:game_store/app/features/intro/index/views/screens/intro_screen.dart';
-import 'package:game_store/app/features/product/detail/views/screens/product_detail_screen.dart';
 import 'package:get/get.dart';
+import 'package:loginsignup/app/features/dashboard/index/views/screens/dashboard_screen.dart';
+import 'package:loginsignup/app/features/intro/index/views/screens/intro_screen.dart';
+import 'package:loginsignup/app/features/product/detail/views/screens/product_detail_screen.dart';
 
 part 'app_routes.dart';
 

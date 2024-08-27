@@ -13,11 +13,11 @@ class LessonCard extends StatelessWidget {
         lesson.isPlaying
             ? Image.asset(
                 icLearning,
-                height: 45,
+                height: 55,
               )
             : Image.asset(
                 icPlayNext,
-                height: 45,
+                height: 55,
               ),
         const SizedBox(
           width: 15,
@@ -29,8 +29,8 @@ class LessonCard extends StatelessWidget {
               Text(
                 lesson.name,
                 style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               Text(
@@ -47,11 +47,11 @@ class LessonCard extends StatelessWidget {
         lesson.isCompleted
             ? Image.asset(
                 icDone,
-                height: 30,
+                height: 40,
               )
             : Image.asset(
                 icLock,
-                height: 30,
+                height: 40,
               ),
       ],
     );

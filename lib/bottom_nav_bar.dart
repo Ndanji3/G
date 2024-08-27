@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:loginsignup/screens/base_screen.dart';
+import 'package:loginsignup/Academy.dart';
+import 'package:loginsignup/chat_bot.dart';
 import 'package:loginsignup/screens/featuerd_screen.dart';
-import 'package:loginsignup/widgets/circle_button.dart';
-import 'package:loginsignup/widgets/search_testfield.dart';
-import 'chat_bot.dart';
-import 'general.dart';
 import 'interest.dart';
 import 'link_accounts.dart';
 import 'Home.dart';
-import 'Ideators.dart';
+import 'package:loginsignup/pages/home/home_page.dart';
+
 
 class MyBottomNavBar extends StatefulWidget {
   const MyBottomNavBar({super.key});

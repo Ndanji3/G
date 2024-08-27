@@ -2,13 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:loginsignup/Ideators.dart';
-import 'Academy.dart';
 import 'Investors.dart';
-import 'chat_bot.dart';
-import 'general.dart';
-import 'interest.dart';
-import 'link_accounts.dart';
-import 'package:get/get.dart';
+import 'Academy.dart';
+
 
 
 void main() {
@@ -78,6 +74,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                       ),
+
+
                       Tab(
                         child: Container(
                           height: 50,
@@ -90,7 +88,25 @@ class _MyHomePageState extends State<MyHomePage> {
                             child: Text("Investors"),
                           ),
                         ),
+                      ),
+
+                      Tab(
+                        child: Container(
+                          height: 50,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(30),
+                              border: Border.all(color: Colors.blue, width: 1)
+                          ),
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text("Academy"),
+                          ),
+                        ),
                       )
+
+
+
+
                     ],
                   ),
                 ),
@@ -102,6 +118,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
                     Ideators(),
                     Investors(),
+                    Academy()
+
+
 
                   ],
                 ),

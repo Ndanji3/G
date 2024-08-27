@@ -10,14 +10,20 @@ import 'package:loginsignup/pages/home/widgets/new_book.dart';
 import 'package:loginsignup/pages/home/widgets/search_bar.dart';
 
 
+void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent
+  ));
+  runApp( Home());
+}
 
-class Academy extends StatelessWidget {
-   Academy({super.key});
+class Home extends StatelessWidget {
+   Home({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: buildAppBar(),
       //Now we will build the body
       body: SingleChildScrollView(
         child: Column(

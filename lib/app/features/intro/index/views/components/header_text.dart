@@ -19,7 +19,7 @@ class _HeaderText extends StatelessWidget {
     return Text(
       "Adding Fun to Your Life",
       textAlign: TextAlign.center,
-      style: Theme.of(Get.context!).textTheme.headline5!.copyWith(
+      style: Theme.of(Get.context!).textTheme.headlineSmall!.copyWith(
           fontWeight: FontWeight.bold,
           color: Colors.white,
           height: 1.4,

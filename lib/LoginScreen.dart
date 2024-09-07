@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:animated_switch/animated_switch.dart';
+import 'package:loginsignup/Signup.dart';
 import 'Home.dart';
 import 'package:get/get.dart';
 import 'bottom_nav_bar.dart';
-
+import 'Signup.dart';
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -106,6 +107,7 @@ class Login extends StatelessWidget {
                       },
 
                   ),
+
                 ),
                 const SizedBox(height: 15,),
                 const Padding(
@@ -133,6 +135,7 @@ class Login extends StatelessWidget {
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
                           fontSize: 18
+
 
                       ),),
                     ],

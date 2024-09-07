@@ -42,7 +42,7 @@ class _Header extends GetView<ProductDetailController> {
 
   Widget _nameText(String name) {
     return Text(GetUtils.capitalize(name)!,
-        style: Theme.of(Get.context!).textTheme.headline6);
+        style: Theme.of(Get.context!).textTheme.titleLarge);
   }
 
   Widget _categoryText(String category) {

@@ -12,7 +12,7 @@ class _Description extends GetView<ProductDetailController> {
         trimLines: 3,
         style: Theme.of(context)
             .textTheme
-            .bodyText2
+            .bodyMedium
             ?.copyWith(color: Colors.black54, height: 1.5),
         trimMode: TrimMode.Line,
         trimCollapsedText: 'Read More',

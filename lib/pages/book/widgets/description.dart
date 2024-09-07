@@ -23,11 +23,10 @@ List<Widget> buildDescription() => [
               onPressed: () {},
               child: Text("Read Full Book"),
               style: TextButton.styleFrom(
-                padding: EdgeInsets.symmetric(
+                foregroundColor: Colors.white, padding: EdgeInsets.symmetric(
                     vertical: 4.0, horizontal: Constants.kPadding),
                 minimumSize: Size(5, 5),
                 backgroundColor: Colors.blue,
-                primary: Colors.white,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(
                     20.0,

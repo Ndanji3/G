@@ -20,7 +20,7 @@ class _PopularGame extends GetView<DashboardController> {
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Text(
         "Popular Game",
-        style: Theme.of(Get.context!).textTheme.headline6,
+        style: Theme.of(Get.context!).textTheme.titleLarge,
       ),
     );
   }

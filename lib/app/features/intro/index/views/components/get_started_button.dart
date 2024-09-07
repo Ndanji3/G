@@ -7,7 +7,7 @@ class _GetStartedButton extends GetView<IntroController> {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Colors.pink[300],
+        backgroundColor: Colors.pink[300],
       ),
       onPressed: () => controller.goToDashboard(),
       child: Text("Get Started"),

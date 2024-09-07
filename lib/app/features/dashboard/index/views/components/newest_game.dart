@@ -20,7 +20,7 @@ class _NewestGame extends GetView<DashboardController> {
       padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Text(
         "Newest Game",
-        style: Theme.of(Get.context!).textTheme.headline6,
+        style: Theme.of(Get.context!).textTheme.titleLarge,
       ),
     );
   }

@@ -93,12 +93,11 @@ class BuildNewBook extends StatelessWidget {
                       onPressed: () {},
                       child: Text("4.9"),
                       style: TextButton.styleFrom(
-                        padding: const EdgeInsets.symmetric(
+                        foregroundColor: Colors.white, padding: const EdgeInsets.symmetric(
                           vertical: 2.0,
                           horizontal: Constants.kPadding,
                         ),
                         backgroundColor: Colors.blue,
-                        primary: Colors.white,
                         minimumSize: Size(5, 5),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20),

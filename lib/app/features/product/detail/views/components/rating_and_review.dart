@@ -51,7 +51,7 @@ class _RatingsAndReview extends GetView<ProductDetailController> {
           ),
         ),
         TextButton(
-            style: TextButton.styleFrom(primary: Colors.grey),
+            style: TextButton.styleFrom(foregroundColor: Colors.grey),
             onPressed: () {},
             child: Text("View"))
       ],

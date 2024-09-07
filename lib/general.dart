@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class general extends StatelessWidget {
-  const general({super.key});
+class General extends StatelessWidget {
+  const General({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,9 +10,9 @@ class general extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 8),
       decoration: BoxDecoration(color: Colors.blue[500]),
       // Row is a horizontal, linear layout.
-      child: Row(
+      child: const Row(
         children: [
-          const IconButton(
+          IconButton(
             icon: Icon(Icons.menu),
             tooltip: 'Navigation menu',
             onPressed: null, // null disables the button
@@ -20,7 +20,7 @@ class general extends StatelessWidget {
           // Expanded expands its child
           // to fill the available space.
 
-          const IconButton(
+          IconButton(
             icon: Icon(Icons.search),
             tooltip: 'Search',
             onPressed: null,
@@ -38,12 +38,12 @@ class MyScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     // Material is a conceptual piece
     // of paper on which the UI appears.
-    return Material(
+    return const Material(
       // Column is a vertical, linear layout.
       child: Column(
         children: [
 
-          const Expanded(
+          Expanded(
             child: Center(
               child: Text('Hello, world!'),
             ),

@@ -6,7 +6,23 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent
   ));
-  runApp(const Interest());
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Dashboard',
+      theme: ThemeData(
+        primarySwatch: Colors.indigo,
+      ),
+      home: const Interest(),
+    );
+  }
 }
 
 class Interest extends StatefulWidget {
@@ -32,6 +48,23 @@ class _InterestState extends State<Interest> {
               ),
             ),
             child: Column(
+              children: [
+                const SizedBox(height: 5),
+                ListTile(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 50),
+                  title: Text('Hello!', style: Theme.of(context).textTheme.headlineSmall?.copyWith(
+                      color: Colors.white
+                  )),
+                  subtitle: Text('Good Day', style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      color: Colors.white54
+                  )),
+                  trailing: const CircleAvatar(
+                    radius: 30,
+                    backgroundImage: AssetImage('assets/images/P.JPG'),
+                  ),
+                ),
+                const SizedBox(height: 30)
+              ],
             ),
           ),
           Container(
@@ -41,7 +74,7 @@ class _InterestState extends State<Interest> {
               decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(300)
+                      topLeft: Radius.circular(200)
                   )
               ),
               child: GridView.count(
@@ -51,10 +84,14 @@ class _InterestState extends State<Interest> {
                 crossAxisSpacing: 40,
                 mainAxisSpacing: 30,
                 children: [
-                  itemDashboard('ACADEMY', CupertinoIcons.play_rectangle, Colors.deepOrange),
-                  itemDashboard('KIDS', CupertinoIcons.graph_circle, Colors.green),
-                  itemDashboard('FINANCIAL LENDING SUITE', CupertinoIcons.chat_bubble_2, Colors.brown),
-                  itemDashboard('TEAM COLLABORATION', CupertinoIcons.money_dollar_circle, Colors.indigo),
+                  itemDashboard('PROJECTS', CupertinoIcons.lightbulb, Colors.deepOrange),
+                  itemDashboard('INVESTMENTS', CupertinoIcons.graph_circle, Colors.green),
+                  itemDashboard('ADVISOR', CupertinoIcons.exclamationmark_bubble, Colors.purple),
+                  itemDashboard('LENDING SUITES', CupertinoIcons.creditcard, Colors.brown),
+                  itemDashboard('NOTIFICATION', CupertinoIcons.bell, Colors.pinkAccent),
+                  itemDashboard('AI ASSISTANT', CupertinoIcons.add_circled, Colors.teal),
+                  itemDashboard('MARKET TRENDS', CupertinoIcons.question_circle, Colors.blue),
+                  itemDashboard('FOREX', CupertinoIcons.arrow_right_arrow_left_circle, Colors.indigo),
                 ],
               ),
             ),

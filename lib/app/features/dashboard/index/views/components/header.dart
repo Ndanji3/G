@@ -26,7 +26,7 @@ class _Header extends GetView<DashboardController> {
   Widget _title() {
     return Text(
       "Welcome, " + GetUtils.capitalize(controller.user.name)!,
-      style: Theme.of(Get.context!).textTheme.headline5?.copyWith(
+      style: Theme.of(Get.context!).textTheme.headlineSmall?.copyWith(
             color: Colors.white,
           ),
     );

@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:loginsignup/Academy.dart';
 import 'package:loginsignup/app/config/routes/app_pages.dart';
 import 'package:loginsignup/chat_bot.dart';
-import 'package:loginsignup/screens/featuerd_screen.dart';
 import 'interest.dart';
 import 'link_accounts.dart';
 import 'Home.dart';
@@ -14,19 +13,19 @@ class MyBottomNavBar extends StatefulWidget {
   const MyBottomNavBar({super.key});
 
   @override
-  State<MyBottomNavBar> createState() => _MyButtomNavBarState();
+  State<MyBottomNavBar> createState() => _MyBottomNavBarState();
 }
 
 
 
-class _MyButtomNavBarState extends State<MyBottomNavBar> {
+class _MyBottomNavBarState extends State<MyBottomNavBar> {
 
   int myCurrentIndex = 0;
   List pages = const [
 
     MyHomePage(),
+    Accounts(),
     Interest(),
-    FeaturedScreen(),
     bot(),
   ];
 
@@ -38,12 +37,8 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
 
       appBar: AppBar(
         centerTitle: true,
-        title: const Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.grey),),
+        title: const Text("GIIH", style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600, color: Colors.black),),
        backgroundColor: Colors.blue,
-        leading: const CircleAvatar(
-          radius: 20,
-          backgroundImage: AssetImage('assets/images/standard.png'),
-        ),
       ),
 
 
@@ -71,13 +66,11 @@ class _MyButtomNavBarState extends State<MyBottomNavBar> {
                 BottomNavigationBarItem(
                     icon: Icon(Icons.home_filled), label: "Home"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.account_tree_outlined), label: "link accounts"),
+                    icon: Icon(Icons.account_tree_outlined), label: "Accounts"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.favorite), label: "area of interest"),
+                    icon: Icon(Icons.favorite), label: "Area of interest"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.account_balance_wallet), label: "general"),
-                BottomNavigationBarItem(
-                    icon: Icon(Icons.adb_outlined), label: "chat bot"),
+                    icon: Icon(Icons.gamepad_outlined), label: "Games"),
               ]),
         ),
       ),

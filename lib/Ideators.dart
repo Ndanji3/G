@@ -4,6 +4,7 @@ import 'package:loginsignup/Ideators.dart';
 import 'package:loginsignup/Investors.dart';
 import 'package:loginsignup/constants/color.dart';
 import 'package:loginsignup/models/course.dart';
+import 'package:loginsignup/screens/course_screen.dart';
 import 'package:loginsignup/screens/details_screen.dart';
 
 class Ideators extends StatefulWidget {

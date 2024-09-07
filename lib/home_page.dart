@@ -1,16 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:loginsignup/constants/color.dart';
 import 'package:loginsignup/doctor_details_page.dart';
-import 'package:loginsignup/models/course.dart';
-import 'package:loginsignup/screens/details_screen.dart';
 
-class Investors extends StatefulWidget {
+class HomePage extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => InvestorsState();
+  State<StatefulWidget> createState() => HomePageState();
 }
 
-class InvestorsState extends State<Investors> {
+class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return initScreen();
@@ -20,10 +16,10 @@ class InvestorsState extends State<Investors> {
   Widget initScreen() {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xFF2979FF),
+      backgroundColor: Color(0xff053F5E),
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xFF2979FF),
+        backgroundColor: Color(0xff053F5E),
         centerTitle: true,
         leading: Icon(
           Icons.menu,
@@ -56,7 +52,29 @@ class InvestorsState extends State<Investors> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-
+            Container(
+              margin: EdgeInsets.only(top: 20, left: 20),
+              child: Text(
+                "Hi, Olivia",
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 25,
+                  fontFamily: 'Roboto',
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 5, left: 20),
+              child: Text(
+                "Welcome Back",
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Roboto',
+                ),
+              ),
+            ),
             Container(
               margin: EdgeInsets.only(top: 25, left: 20, right: 20),
               width: size.width,
@@ -82,12 +100,12 @@ class InvestorsState extends State<Investors> {
                       child: TextField(
                         maxLines: 1,
                         autofocus: false,
-                        style: TextStyle(color: Color(0xFF2979FF), fontSize: 20),
+                        style: TextStyle(color: Color(0xff107163), fontSize: 20),
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Search..',
                         ),
-                        cursorColor: Color(0xFF2979FF),
+                        cursorColor: Color(0xff107163),
                       ),
                     ),
                   ),
@@ -95,7 +113,7 @@ class InvestorsState extends State<Investors> {
                     flex: 1,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color(0xFF2979FF),
+                        color: Color(0xff107163),
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: Center(
@@ -146,14 +164,14 @@ class InvestorsState extends State<Investors> {
             ),
             Container(
               height: 120,
-              margin: EdgeInsets.only(top: 10, left: 20),
+              margin: EdgeInsets.only(top: 20, left: 20),
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  demoCategories("assets/tooth.png", "Green Energy", "10 Ideas"), // paul please change the tooth png to an engine png... make sure it has the same name"tooth png" and edit the dimensions of the png to be exactly the same as the tooth png... do the same with the rest of the png below tooth in this code
-                  demoCategories("assets/brain.png", "Agro", "15 Ideas"),
-                  demoCategories("assets/heart.png", "Green Health", "17 Ideas"),
-                  demoCategories("assets/bone.png", "Green Tech", "24 Ideas"),
+                  demoCategories("assets/tooth.png", "Tooth", "10 Doctors"),
+                  demoCategories("assets/brain.png", "Brain", "15 Doctors"),
+                  demoCategories("assets/heart.png", "Heart", "17 Doctors"),
+                  demoCategories("assets/bone.png", "Bone", "24 Doctors"),
                 ],
               ),
             ),
@@ -165,7 +183,7 @@ class InvestorsState extends State<Investors> {
                 children: [
                   Container(
                     child: Text(
-                      'Ideas',
+                      'Top Rated',
                       style: TextStyle(
                         color: Color(0xff363636),
                         fontSize: 20,
@@ -198,27 +216,27 @@ class InvestorsState extends State<Investors> {
                   children: [
                     demoTopRatedDr(
                       "assets/dr_1.png",
-                      "Biomass engine",
-                      "",
+                      "Dr. Fred Mask",
+                      "Heart surgen",
                       "4.1",
                       "",
                     ),
                     demoTopRatedDr(
                       "assets/dr_2.png",
-                      "hydro genset",
-                      "",
+                      "Dr. Stella Kane",
+                      "Bone Specialist",
                       "4.2",
                       "",
                     ),
                     demoTopRatedDr(
                       "assets/dr_3.png",
-                      "Hybrid feed",
-                      "",
+                      "Dr. Zac Wolff",
+                      "Eyes Specialist",
                       "4.4",
                       "",
                     ),
-                    demoTopRatedDr("assets/dr_2.png", "solar",
-                        "", "4.3", ""),
+                    demoTopRatedDr("assets/dr_2.png", "Dr. Fred Mask",
+                        "Heart surgen", "4.3", ""),
                   ],
                 ),
               ),
@@ -234,7 +252,7 @@ class InvestorsState extends State<Investors> {
       width: 100,
       margin: EdgeInsets.only(right: 15),
       decoration: BoxDecoration(
-        color: Color(0xFF2979FF),
+        color: Color(0xff107163),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(

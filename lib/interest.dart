@@ -55,7 +55,7 @@ class _InterestState extends State<Interest> {
                   title: Text('Hello!', style: Theme.of(context).textTheme.headlineSmall?.copyWith(
                       color: Colors.white
                   )),
-                  subtitle: Text('Good Day', style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                  subtitle: Text('Mulibwanji', style: Theme.of(context).textTheme.titleMedium?.copyWith(
                       color: Colors.white54
                   )),
                   trailing: const CircleAvatar(

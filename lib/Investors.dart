@@ -6,6 +6,8 @@ import 'package:loginsignup/models/course.dart';
 import 'package:loginsignup/screens/details_screen.dart';
 
 class Investors extends StatefulWidget {
+  const Investors({super.key});
+
   @override
   State<StatefulWidget> createState() => InvestorsState();
 }
@@ -20,20 +22,20 @@ class InvestorsState extends State<Investors> {
   Widget initScreen() {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: Color(0xFF2979FF),
+      backgroundColor: const Color(0xFF2979FF),
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Color(0xFF2979FF),
+        backgroundColor: const Color(0xFF2979FF),
         centerTitle: true,
-        leading: Icon(
+        leading: const Icon(
           Icons.menu,
           color: Colors.white,
         ),
         actions: [
           GestureDetector(
             child: Container(
-              margin: EdgeInsets.only(right: 10),
-              child: Icon(
+              margin: const EdgeInsets.only(right: 10),
+              child: const Icon(
                 Icons.notifications_rounded,
                 color: Colors.white,
               ),
@@ -41,8 +43,8 @@ class InvestorsState extends State<Investors> {
           ),
           GestureDetector(
             child: Container(
-              margin: EdgeInsets.only(right: 5),
-              child: Image.asset("assets/profile_img.png"),
+              margin: const EdgeInsets.only(right: 5),
+              child: Image.asset("assets/profile_img.JPG"),
             ),
           )
         ],
@@ -50,7 +52,7 @@ class InvestorsState extends State<Investors> {
       body: Container(
         decoration: BoxDecoration(
             color: Colors.grey[100],
-            borderRadius: BorderRadius.only(
+            borderRadius: const BorderRadius.only(
                 topRight: Radius.circular(30), topLeft: Radius.circular(30))),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -58,13 +60,13 @@ class InvestorsState extends State<Investors> {
           children: [
 
             Container(
-              margin: EdgeInsets.only(top: 25, left: 20, right: 20),
+              margin: const EdgeInsets.only(top: 25, left: 20, right: 20),
               width: size.width,
               height: 60,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
-                boxShadow: [
+                boxShadow: const [
                   BoxShadow(
                     color: Color(0x14000000),
                     offset: Offset(0, 10),
@@ -78,11 +80,11 @@ class InvestorsState extends State<Investors> {
                   Expanded(
                     flex: 5,
                     child: Container(
-                      margin: EdgeInsets.only(left: 10, right: 10),
-                      child: TextField(
+                      margin: const EdgeInsets.only(left: 10, right: 10),
+                      child: const TextField(
                         maxLines: 1,
                         autofocus: false,
-                        style: TextStyle(color: Color(0xFF2979FF), fontSize: 20),
+                        style: TextStyle(color: Color(0xFF2979FF), fontSize: 15),
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Search..',
@@ -95,14 +97,14 @@ class InvestorsState extends State<Investors> {
                     flex: 1,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: Color(0xFF2979FF),
+                        color: const Color(0xFF2979FF),
                         borderRadius: BorderRadius.circular(5),
                       ),
-                      child: Center(
+                      child: const Center(
                         child: Icon(
                           Icons.search,
                           color: Colors.white,
-                          size: 25,
+                          size: 10,
                         ),
                       ),
                     ),
@@ -112,30 +114,30 @@ class InvestorsState extends State<Investors> {
             ),
             Container(
               width: size.width,
-              margin: EdgeInsets.only(top: 20, left: 20),
+              margin: const EdgeInsets.only(top: 20, left: 20),
               child: Stack(
                 fit: StackFit.loose,
                 children: [
                   Container(
-                    child: Text(
+                    child: const Text(
                       'Category',
                       style: TextStyle(
                         color: Color(0xff363636),
-                        fontSize: 20,
+                        fontSize: 16,
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(right: 20, top: 1),
-                    child: Align(
+                    margin: const EdgeInsets.only(right: 20, top: 10),
+                    child: const Align(
                       alignment: Alignment.centerRight,
                       child: Text(
                         'See all',
                         style: TextStyle(
                           color: Color(0xff5e5d5d),
-                          fontSize: 19,
+                          fontSize: 15,
                           fontFamily: 'Roboto',
                         ),
                       ),
@@ -146,7 +148,7 @@ class InvestorsState extends State<Investors> {
             ),
             Container(
               height: 120,
-              margin: EdgeInsets.only(top: 10, left: 20),
+              margin: const EdgeInsets.only(top: 20, left: 20),
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
@@ -159,30 +161,30 @@ class InvestorsState extends State<Investors> {
             ),
             Container(
               width: size.width,
-              margin: EdgeInsets.only(top: 20, left: 20),
+              margin: const EdgeInsets.only(top: 10, left: 20),
               child: Stack(
                 fit: StackFit.loose,
                 children: [
                   Container(
-                    child: Text(
+                    child: const Text(
                       'Ideas',
                       style: TextStyle(
                         color: Color(0xff363636),
-                        fontSize: 20,
+                        fontSize: 16,
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w500,
                       ),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(right: 20, top: 1),
-                    child: Align(
+                    margin: const EdgeInsets.only(right: 20, top: 1),
+                    child: const Align(
                       alignment: Alignment.centerRight,
                       child: Text(
                         'See all',
                         style: TextStyle(
                           color: Color(0xff5e5d5d),
-                          fontSize: 19,
+                          fontSize: 15,
                           fontFamily: 'Roboto',
                         ),
                       ),
@@ -193,31 +195,32 @@ class InvestorsState extends State<Investors> {
             ),
             Expanded(
               child: Container(
-                margin: EdgeInsets.only(left: 20, right: 20),
+                margin: const EdgeInsets.only(left: 10, right: 10),
                 child: ListView(
                   children: [
                     demoTopRatedDr(
-                      "assets/dr_1.png",
+                      "assets/dr_1.JPG",
                       "Biomass engine",
                       "",
                       "4.1",
                       "",
                     ),
                     demoTopRatedDr(
-                      "assets/dr_2.png",
-                      "hydro genset",
+
+                      "assets/dr_2.JPEG",
+                      "hydro Genset",
                       "",
                       "4.2",
                       "",
                     ),
                     demoTopRatedDr(
-                      "assets/dr_3.png",
+                      "assets/dr_3.JPG",
                       "Hybrid feed",
                       "",
                       "4.4",
                       "",
                     ),
-                    demoTopRatedDr("assets/dr_2.png", "solar",
+                    demoTopRatedDr("assets/dr_4.JPG", "solar",
                         "", "4.3", ""),
                   ],
                 ),
@@ -232,9 +235,9 @@ class InvestorsState extends State<Investors> {
   Widget demoCategories(String img, String name, String drCount) {
     return Container(
       width: 100,
-      margin: EdgeInsets.only(right: 15),
+      margin: const EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
-        color: Color(0xFF2979FF),
+        color: const Color(0xFF2979FF),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -245,27 +248,27 @@ class InvestorsState extends State<Investors> {
             child: Image.asset(img),
           ),
           Container(
-            margin: EdgeInsets.only(top: 10),
+            margin: const EdgeInsets.only(top: 10),
             child: Text(
               name,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
-                fontSize: 13,
+                fontSize: 10,
                 fontFamily: 'Roboto',
                 fontWeight: FontWeight.w500,
               ),
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 10),
-            padding: EdgeInsets.all(7),
+            margin: const EdgeInsets.only(top: 10),
+            padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
-              color: Color(0xffd9fffa).withOpacity(0.07),
+              color: const Color(0xffd9fffa).withOpacity(0.07),
               borderRadius: BorderRadius.circular(5),
             ),
             child: Text(
               drCount,
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 8,
                 fontFamily: 'Roboto',
@@ -287,7 +290,7 @@ class InvestorsState extends State<Investors> {
       child: Container(
         height: 90,
         // width: size.width,
-        margin: EdgeInsets.only(top: 10),
+        margin: const EdgeInsets.only(top: 10),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(5),
@@ -297,36 +300,36 @@ class InvestorsState extends State<Investors> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.only(left: 20),
+              margin: const EdgeInsets.only(left: 20),
               height: 90,
               width: 50,
               child: Image.asset(img),
             ),
             Container(
-              margin: EdgeInsets.only(left: 20, top: 10),
+              margin: const EdgeInsets.only(left: 20, top: 10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(top: 10),
+                    margin: const EdgeInsets.only(top: 10),
                     child: Text(
                       name,
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Color(0xff363636),
-                        fontSize: 17,
+                        fontSize: 15,
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w300,
                       ),
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 10),
+                    margin: const EdgeInsets.only(top: 10),
                     child: Row(
                       children: [
                         Text(
                           name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Color(0xffababab),
                             fontFamily: 'Roboto',
                             fontWeight: FontWeight.w300,
@@ -337,11 +340,11 @@ class InvestorsState extends State<Investors> {
                           child: Row(
                             children: [
                               Container(
-                                child: Text(
+                                child: const Text(
                                   "Rating: ",
                                   style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 10,
                                     fontFamily: 'Roboto',
                                   ),
                                 ),
@@ -349,9 +352,9 @@ class InvestorsState extends State<Investors> {
                               Container(
                                 child: Text(
                                   rating,
-                                  style: TextStyle(
+                                  style: const TextStyle(
                                     color: Colors.black,
-                                    fontSize: 12,
+                                    fontSize: 10,
                                     fontFamily: 'Roboto',
                                   ),
                                 ),

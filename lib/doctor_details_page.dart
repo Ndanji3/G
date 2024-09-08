@@ -57,7 +57,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                     Container(
                       margin: const EdgeInsets.only(bottom: 20),
                       child: Image.asset(
-                        "assets/dr_details.JPG",
+                        "assets/dr_2.JPEG",
                       ),
                     ),
                     Container(
@@ -68,7 +68,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                         children: [
                           Container(
                             margin: const EdgeInsets.only(top: 30),
-                            child: const Text('Lombe',
+                            child: const Text('Kinda',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 22,

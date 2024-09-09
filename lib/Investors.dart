@@ -60,9 +60,9 @@ class InvestorsState extends State<Investors> {
           children: [
 
             Container(
-              margin: const EdgeInsets.only(top: 25, left: 20, right: 20),
+              margin: const EdgeInsets.only(top: 5, left: 10, right: 10),
               width: size.width,
-              height: 60,
+              height: 50,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
@@ -70,7 +70,7 @@ class InvestorsState extends State<Investors> {
                   BoxShadow(
                     color: Color(0x14000000),
                     offset: Offset(0, 10),
-                    blurRadius: 15,
+                    blurRadius: 10,
                     spreadRadius: 0,
                   ),
                 ],
@@ -123,7 +123,7 @@ class InvestorsState extends State<Investors> {
                       'Category',
                       style: TextStyle(
                         color: Color(0xff363636),
-                        fontSize: 16,
+                        fontSize: 14,
                         fontFamily: 'Roboto',
                         fontWeight: FontWeight.w500,
                       ),
@@ -137,7 +137,7 @@ class InvestorsState extends State<Investors> {
                         'See all',
                         style: TextStyle(
                           color: Color(0xff5e5d5d),
-                          fontSize: 15,
+                          fontSize: 13,
                           fontFamily: 'Roboto',
                         ),
                       ),
@@ -147,12 +147,12 @@ class InvestorsState extends State<Investors> {
               ),
             ),
             Container(
-              height: 120,
-              margin: const EdgeInsets.only(top: 20, left: 20),
+              height: 100,
+              margin: const EdgeInsets.only(top: 10, left: 10),
               child: ListView(
                 scrollDirection: Axis.horizontal,
                 children: [
-                  demoCategories("assets/tooth.png", "Green Energy", "10 Ideas"), // paul please change the tooth png to an engine png... make sure it has the same name"tooth png" and edit the dimensions of the png to be exactly the same as the tooth png... do the same with the rest of the png below tooth in this code
+                  demoCategories( "assets/tooth.png","Green Energy", "10 Ideas"), // paul please change the tooth png to an engine png... make sure it has the same name"tooth png" and edit the dimensions of the png to be exactly the same as the tooth png... do the same with the rest of the png below tooth in this code
                   demoCategories("assets/brain.png", "Agro", "15 Ideas"),
                   demoCategories("assets/heart.png", "Green Health", "17 Ideas"),
                   demoCategories("assets/bone.png", "Green Tech", "24 Ideas"),
@@ -161,7 +161,7 @@ class InvestorsState extends State<Investors> {
             ),
             Container(
               width: size.width,
-              margin: const EdgeInsets.only(top: 10, left: 20),
+              margin: const EdgeInsets.only(top: 10, left: 10),
               child: Stack(
                 fit: StackFit.loose,
                 children: [
@@ -170,14 +170,14 @@ class InvestorsState extends State<Investors> {
                       'Ideas',
                       style: TextStyle(
                         color: Color(0xff363636),
-                        fontSize: 16,
+                        fontSize: 14,
                         fontFamily: 'Roboto',
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w400,
                       ),
                     ),
                   ),
                   Container(
-                    margin: const EdgeInsets.only(right: 20, top: 1),
+                    margin: const EdgeInsets.only(right: 10, top: 10),
                     child: const Align(
                       alignment: Alignment.centerRight,
                       child: Text(
@@ -199,28 +199,27 @@ class InvestorsState extends State<Investors> {
                 child: ListView(
                   children: [
                     demoTopRatedDr(
-                      "assets/dr_1.JPG",
+                      "assets/dr_1.JPEG",
                       "Biomass engine",
                       "",
                       "4.1",
                       "",
                     ),
                     demoTopRatedDr(
-
                       "assets/dr_2.JPEG",
-                      "hydro Genset",
+                      "Hydro Genset",
                       "",
                       "4.2",
                       "",
                     ),
                     demoTopRatedDr(
-                      "assets/dr_3.JPG",
+                      "assets/dr_3.JPEG",
                       "Hybrid feed",
                       "",
                       "4.4",
                       "",
                     ),
-                    demoTopRatedDr("assets/dr_4.JPG", "solar",
+                    demoTopRatedDr("assets/dr_4.JPG", "Solar",
                         "", "4.3", ""),
                   ],
                 ),

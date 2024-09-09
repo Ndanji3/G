@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:animated_switch/animated_switch.dart';
 import 'package:loginsignup/Signup.dart';
@@ -96,15 +97,15 @@ class Login extends StatelessWidget {
 
                   child:
 
-                     ElevatedButton(
-                       child: const Text('login', style: TextStyle(color: Colors.blue),),
+                  ElevatedButton(
+                    child: const Text('login', style: TextStyle(color: Colors.blue),),
 
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => const MyBottomNavBar()),
-                        );
-                      },
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const MyBottomNavBar()),
+                      );
+                    },
 
                   ),
 

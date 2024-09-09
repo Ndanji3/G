@@ -34,8 +34,8 @@ class _AccountsState extends State<Accounts> {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 15),
                 child: CircleAvatar(
-                  radius: 100,
-                  backgroundImage: AssetImage('assets/images/profile.jpeg'),
+                  radius: 90,
+                  backgroundImage: AssetImage('assets/dr_2.JPEG'),
                 ),
               ),
             ),
@@ -44,7 +44,7 @@ class _AccountsState extends State<Accounts> {
               child: Padding(
                   padding: EdgeInsets.fromLTRB(0, 20, 0, 15),
                   child: Text(
-                    "Hey Milika!",
+                    "Hey Paul!",
                     style: TextStyle(
                         color: Colors.grey[500],
                         fontWeight: FontWeight.bold,
@@ -84,7 +84,7 @@ class _AccountsState extends State<Accounts> {
                         size: 22,
                         color: Colors.greenAccent,
                       ),
-                      title: Text("Transaction Details"),
+                      title: Text("My Investments"),
                       trailing: Icon(Icons.arrow_forward_ios),
                     ),
                   ],

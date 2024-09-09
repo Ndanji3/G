@@ -33,16 +33,16 @@ class _IdeatorsState extends State<Ideators> {
                       Align(
                         child: Text(
                           'Add Idea',
-                          style: Theme.of(context).textTheme.displayMedium,
+                          style: Theme.of(context).textTheme.displaySmall,
                         ),
                       ),
                       Positioned(
                         left: 0,
                         child: CustomIconButton(
-                          child: const Icon(Icons.add),
-                          height: 60,
-                          width: 60,
+                          height: 50,
+                          width: 50,
                           onTap: () => Navigator.pop(context),
+                          child: const Icon(Icons.add),
                         ),
                       ),
                     ],

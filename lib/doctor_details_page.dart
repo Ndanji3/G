@@ -90,7 +90,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                           ),
                           Container(
                             margin: const EdgeInsets.only(top: 15),
-                            child: const Text('Rating: 4.5',
+                            child: const Text('Rating: 4.2',
                               style: TextStyle(
                                 color: Colors.yellow,
                                 fontSize: 15,
@@ -108,10 +108,10 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
             ),
             Container(
               margin: const EdgeInsets.only(left: 20, top: 30),
-              child: const Text('Biomass is renewable organic material that comes from plants and animals. Biomass can be burned directly for heat or converted to liquid and gaseous fuels through various processes, Biomass was the largest source of total annual U.S. energy consumption until the mid-1800s. In 2023, biomass accounted for about 5% of U.S. total primary energy consumption. Biomass is used for heating and electricity generation and as a transportation fuel.',
+              child: const Text('Hydrogenerators convert the mechanical energy from the turbine into electrical energy using an excitation system.',
                 style: TextStyle(
                   color: Color(0xff363636),
-                  fontSize: 25,
+                  fontSize: 14,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w700,
                 ),

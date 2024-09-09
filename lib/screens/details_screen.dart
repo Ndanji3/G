@@ -45,16 +45,16 @@ class _DetailsScreenState extends State<DetailsScreen> {
                       Align(
                         child: Text(
                           "Pitch",
-                          style: Theme.of(context).textTheme.displayMedium,
+                          style: Theme.of(context).textTheme.displaySmall,
                         ),
                       ),
                       Positioned(
                         left: 0,
                         child: CustomIconButton(
-                          child: const Icon(Icons.arrow_back),
                           height: 35,
                           width: 35,
                           onTap: () => Navigator.pop(context),
+                          child: const Icon(Icons.arrow_back),
                         ),
                       ),
                     ],
@@ -70,7 +70,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                 const Text(
                   "Biomass powered engine",
                   style: TextStyle(
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                     fontSize: 17,
                   ),
                 ),
@@ -78,55 +78,15 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   height: 3,
                 ),
                 const Text(
-                  "Author: Malata",
+                  "Author: Paul",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
-                    fontSize: 16,
+                    fontSize: 14,
                   ),
-                ),
-                const SizedBox(
+                ), const SizedBox(
                   height: 3,
                 ),
-                Row(
-                  children: [
-                    Image.asset(
-                      icFeaturedOutlined,
-                      height: 20,
-                    ),
-                    const Text(
-                      " 4.8",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 15,
-                    ),
-                    const Icon(
-                      Icons.timer,
-                      color: Colors.grey,
-                    ),
-                    const Text(
-                      " 72 Hours",
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontWeight: FontWeight.w500,
-                        fontSize: 16,
-                      ),
-                    ),
-                    const Spacer(),
-                    const Text(
-                      " \$40",
-                      style: TextStyle(
-                        color: kPrimaryColor,
-                        fontWeight: FontWeight.w700,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
+
                 const SizedBox(
                   height: 15,
                 ),
@@ -145,7 +105,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
           enableDrag: false,
           builder: (context) {
             return const SizedBox(
-              height: 80,
+              height: 60,
               child: EnrollBottomSheet(),
             );
           },
@@ -184,9 +144,9 @@ class Description extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Padding(
-      padding: EdgeInsets.only(top: 20.0),
+      padding: EdgeInsets.only(top: 10.0),
       child: Text(
-          "Build Flutter"),
+          ""),
     );
   }
 }
@@ -203,6 +163,7 @@ class CustomTabView extends StatefulWidget {
 
 class _CustomTabViewState extends State<CustomTabView> {
   final List<String> _tags = ["Description", "Full pitch"];
+
 
   Widget _buildTags(int index) {
     return GestureDetector(
@@ -282,7 +243,7 @@ class _EnrollBottomSheetState extends State<EnrollBottomSheet> {
               height: 45,
               width: 45,
               child: const Text(
-                "Invest",
+                "SUBMIT",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 18,

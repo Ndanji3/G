@@ -16,10 +16,10 @@ class BookModel {
   //The new book
 
   static BookModel newBook = BookModel(
-    image: "assets/images/new_book_1.jpeg",
-    secondImage: "assets/images/new_book_2.jpeg",
-    title: "Raft Of Stars",
-    subtitle: "Andrew J. Graff",
+    image: "assets/images/new_book_1.jpg",
+    secondImage: "assets/images/new_book_2.jpg",
+    title: "Plant House",
+    subtitle: "Lynnet",
     favorite: true,
   );
 
@@ -27,38 +27,38 @@ class BookModel {
 
   static List<BookModel> books = [
     BookModel(
-      image: "assets/images/book_1.jpeg",
-      secondImage: "assets/images/book_1.jpeg",
-      title: "The Martian",
-      subtitle: "Andy Weir",
+      image: "assets/images/book_1.jpg",
+      secondImage: "assets/images/book_1.jpg",
+      title: "Plant Anatomy",
+      subtitle: "Paul",
       favorite: false,
     ),
     BookModel(
-      image: "assets/images/book_2.jpeg",
-      secondImage: "assets/images/book_2.jpeg",
-      title: "Midnight war",
-      subtitle: "Mateo Martinez",
+      image: "assets/images/book_2.jpg",
+      secondImage: "assets/images/book_2.jpg",
+      title: "Plant Ecology",
+      subtitle: "Milika",
       favorite: false,
     ),
     BookModel(
-      image: "assets/images/book_3.jpeg",
-      secondImage: "assets/images/book_3.jpeg",
-      title: "The Hypocrite World",
-      subtitle: "Sophia Hill",
+      image: "assets/images/book_3.jpg",
+      secondImage: "assets/images/book_3.jpg",
+      title: "House Plants",
+      subtitle: "Mpundu",
       favorite: false,
     ),
     BookModel(
-      image: "assets/images/book_4.jpeg",
-      secondImage: "assets/images/book_4.jpeg",
-      title: "Amara The Brave",
-      subtitle: "Matt Zhang",
+      image: "assets/images/book_4.jpg",
+      secondImage: "assets/images/book_4.jpg",
+      title: "The Mind of A Plant",
+      subtitle: "Lombe",
       favorite: true,
     ),
     BookModel(
-      image: "assets/images/book_5.jpeg",
-      secondImage: "assets/images/book_5.jpeg",
-      title: "Harry Potter",
-      subtitle: "A History Of Magic",
+      image: "assets/images/book_5.jpg",
+      secondImage: "assets/images/book_5.jpg",
+      title: "Practical House Plant",
+      subtitle: "Vid",
       favorite: true,
     ),
     //5 books

@@ -3,7 +3,7 @@ part of rest_api;
 class UserService {
   User getUserLogin() {
     // sample data
-    return User(image: AssetImage(ImageRaster.logoGiaDeveloper), name: "gia");
+    return User(image: AssetImage(ImageRaster.sa), name: "GIIH");
   }
 }
 

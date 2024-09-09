@@ -58,10 +58,10 @@ final _oriAndTheBlindForest = Product(
       AssetImage(ImageRaster.oriBlindForest4),
       AssetImage(ImageRaster.oriBlindForest5),
     ],
-    name: "ori and the blind forest",
+    name: "Ghostly Gardens",
     category: "adventure",
     description:
-        "The forest of Nibel is dying. After a powerful storm sets a series of devastating events in motion, an unlikely hero must journey to find his courage and confront a dark nemesis to save his home. “Ori and the Blind Forest” tells the tale of a young orphan destined for heroics, through a visually stunning action-platformer crafted by Moon Studios for PC. Featuring hand-painted artwork, meticulously animated character performance, and a fully orchestrated score, “Ori and the Blind Forest” explores a deeply emotional story about love and sacrifice, and the hope that exists in us all. ",
+        " When darkness falls and the moon rise, the zombies awake from the grave to attack the human world. Knowing this, the flowers plan to prevent that conspiracy. Let’s join companion and commanded them to stop the attack of zombies in Angry Flowers. .",
     rating: 4.7,
     totalDownload: 300,
     totalReview: 15);
@@ -76,10 +76,10 @@ final _raymanLegends = Product(
       AssetImage(ImageRaster.raymandLegend4),
       AssetImage(ImageRaster.raymandLegend5),
     ],
-    name: "rayman legends",
-    category: "action",
+    name: "Plants vs Zombies",
+    category: "Action",
     description:
-        "Michel Ancel, the celebrated creator of Rayman®, Beyond Good & Evil®, and the Raving Rabbids®, returns to unleash his innovative creativity on this new entry into the Rayman® franchise.\n When Rayman, Globox, and the Teensies discover a mysterious tent filled with captivating paintings, they are suddenly transported to a series of mythical new worlds! \n Join them as they run, jump, and slap their way through each world to get home, save the day, and discover the secrets of the legendary paintings!",
+        "Plants vs. Zombies is a 2009 tower defense video game developed and published by PopCap Games. First released for Windows and Mac OS X, the game has since been ported to consoles, handhelds, and mobile devices. \nThe player takes the role of a homeowner amid a zombie apocalypse. As a horde of zombies approaches along several parallel lanes, the player must defend their home by placing plants, which fire projectiles at the zombies or otherwise detrimentally affect them. The player collects a currency called sun to buy plants.\n If a zombie happens to make it to the house on any lane, the player loses the level.",
     rating: 3.7,
     totalDownload: 500,
     totalReview: 300);

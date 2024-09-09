@@ -76,5 +76,3 @@ class _IdeatorsState extends State<Ideators> {
     );
   }
 }
-
-

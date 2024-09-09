@@ -34,8 +34,8 @@ class _AccountsState extends State<Accounts> {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 20, 0, 15),
                 child: CircleAvatar(
-                  radius: 90,
-                  backgroundImage: AssetImage('assets/dr_2.JPEG'),
+                  radius: 80,
+                  backgroundImage: AssetImage('assets/sa.png'),
                 ),
               ),
             ),
@@ -44,7 +44,7 @@ class _AccountsState extends State<Accounts> {
               child: Padding(
                   padding: EdgeInsets.fromLTRB(0, 20, 0, 15),
                   child: Text(
-                    "Hey Paul!",
+                    "Welcome Back!",
                     style: TextStyle(
                         color: Colors.grey[500],
                         fontWeight: FontWeight.bold,

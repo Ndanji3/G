@@ -68,7 +68,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   height: 15,
                 ),
                 const Text(
-                  "Biomass powered engine",
+                  "Project Name:",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 17,
@@ -78,7 +78,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                   height: 3,
                 ),
                 const Text(
-                  "Author: Paul",
+                  "Green Project Developer:",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 14,

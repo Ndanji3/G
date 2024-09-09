@@ -115,7 +115,7 @@ class CourseContainer extends StatelessWidget {
                 children: [
                   Text(course.name),
                   Text(
-                    "Author ${course.author}",
+                    "Green Project Developer ${course.author}",
                     style: Theme.of(context).textTheme.bodySmall,
                   ),
                   const SizedBox(

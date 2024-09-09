@@ -106,9 +106,46 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                 ),
               ),
             ),
+
             Container(
               margin: const EdgeInsets.only(left: 20, top: 30),
+              child: const Text('Description.',
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 16,
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.only(left: 20, top: 10),
               child: const Text('Hydrogenerators convert the mechanical energy from the turbine into electrical energy using an excitation system.',
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 12,
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.only(left: 20, top: 20),
+              child: const Text('Project Cost:',
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 16,
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.only(left: 20, top: 10),
+              child: const Text('K56,000.00',
                 style: TextStyle(
                   color: Color(0xff363636),
                   fontSize: 14,
@@ -117,6 +154,31 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                 ),
               ),
             ),
+
+            Container(
+              margin: const EdgeInsets.only(left: 20, top: 20),
+              child: const Text('Estimated Return:',
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 16,
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+
+            Container(
+              margin: const EdgeInsets.only(left: 20, top: 10),
+              child: const Text('K71,000.00',
+                style: TextStyle(
+                  color: Color(0xff363636),
+                  fontSize: 16,
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+
 
 
             Container(

@@ -1,4 +1,5 @@
 
+
 import 'package:flutter/material.dart';
 import 'package:animated_switch/animated_switch.dart';
 import 'package:loginsignup/Signup.dart';
@@ -30,21 +31,36 @@ class Login extends StatelessWidget {
                 )
             ),
           ),
+
           Align(
             alignment: Alignment.center,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
+                Container(
+                  height: 105.0,
+                  width: 110.0,
+                  padding: EdgeInsets.only(top: 30),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: Center(
+                    child: Image.asset('assets/images/standard.png'),
+                  ),
+                ),
+
+
+
                 const Text('Welcome To GIIH',style: TextStyle(
                   color: Colors.white,
-                  fontSize: 30,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
 
                 ),),
-                const SizedBox(height: 30,),
+                const SizedBox(height: 20,),
                 const Padding(
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(10.0),
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: 'Username',
@@ -55,7 +71,7 @@ class Login extends StatelessWidget {
                   ),
                 ),
                 const Padding(
-                  padding: EdgeInsets.all(20.0),
+                  padding: EdgeInsets.all(10.0),
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: 'Password',
@@ -84,9 +100,9 @@ class Login extends StatelessWidget {
                     ],
                   ),
                 ),
-                const SizedBox(height: 20,),
+                const SizedBox(height: 10,),
                 Container(
-                  height: 50,
+                  height: 40,
                   width: 350,
                   decoration: const BoxDecoration(
 
@@ -126,7 +142,7 @@ class Login extends StatelessWidget {
                   ],
                 ),
                 const Padding(
-                  padding: EdgeInsets.only(left: 100.0,top: 30),
+                  padding: EdgeInsets.only(left: 70,top: 10),
                   child: Row(
                     children: [
                       Text("Don't have an account?",style: TextStyle(
@@ -135,7 +151,7 @@ class Login extends StatelessWidget {
                       Text("Sign up",style: TextStyle(
                           color: Colors.grey,
                           fontWeight: FontWeight.bold,
-                          fontSize: 18
+                          fontSize: 16
 
 
                       ),),

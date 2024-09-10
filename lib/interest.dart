@@ -60,7 +60,7 @@ class _InterestState extends State<Interest> {
                   )),
                   trailing: const CircleAvatar(
                     radius: 30,
-                    backgroundImage: AssetImage('assets/images/P.JPG'),
+                    backgroundImage: AssetImage('assets/images/sa.png'),
                   ),
                 ),
                 const SizedBox(height: 30)

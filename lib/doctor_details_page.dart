@@ -68,7 +68,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                         children: [
                           Container(
                             margin: const EdgeInsets.only(top: 30),
-                            child: const Text('Kinda',
+                            child: const Text('Paul',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 22,
@@ -79,7 +79,7 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
                           ),
                           Container(
                             margin: const EdgeInsets.only(top: 10),
-                            child: const Text('Author',
+                            child: const Text('Green Project Developer',
                               style: TextStyle(
                                 color: Colors.white,
                                 fontSize: 15,
@@ -145,10 +145,10 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
 
             Container(
               margin: const EdgeInsets.only(left: 20, top: 10),
-              child: const Text('K56,000.00',
+              child: const Text('R56,000.00',
                 style: TextStyle(
                   color: Color(0xff363636),
-                  fontSize: 14,
+                  fontSize: 15,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w700,
                 ),
@@ -169,10 +169,10 @@ class _DoctorDetailState extends State<DoctorDetailPage> {
 
             Container(
               margin: const EdgeInsets.only(left: 20, top: 10),
-              child: const Text('K71,000.00',
+              child: const Text('R71,000.00',
                 style: TextStyle(
                   color: Color(0xff363636),
-                  fontSize: 16,
+                  fontSize: 15,
                   fontFamily: 'Roboto',
                   fontWeight: FontWeight.w700,
                 ),

@@ -3,7 +3,7 @@ part of constants;
 class ImageRaster {
   static const _path = "assets/images/raster";
 
-  static const oriBlindForestIcon = "$_path/ori blind forest/ori-icon.PNG";
+  static const oriBlindForestIcon = "$_path/ori blind forest/ori-icon.png";
   static const oriBlindForest1 = "$_path/ori blind forest/ori-1.jpg";
   static const oriBlindForest2 = "$_path/ori blind forest/ori-2.jpg";
   static const oriBlindForest3 = "$_path/ori blind forest/ori-3.jpg";

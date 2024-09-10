@@ -44,7 +44,7 @@ class InvestorsState extends State<Investors> {
           GestureDetector(
             child: Container(
               margin: const EdgeInsets.only(right: 5),
-              child: Image.asset("assets/profile_img.JPG"),
+              child: Image.asset("assets/sa.png"),
             ),
           )
         ],
